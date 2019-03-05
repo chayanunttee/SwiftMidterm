@@ -15,6 +15,7 @@
 		842C3C98222E127200BA46AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C3C96222E127200BA46AE /* LaunchScreen.storyboard */; };
 		842C3CA3222E127200BA46AE /* dbmidtermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C3CA2222E127200BA46AE /* dbmidtermTests.swift */; };
 		842C3CAE222E127200BA46AE /* dbmidtermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C3CAD222E127200BA46AE /* dbmidtermUITests.swift */; };
+		842C3CBE222E249500BA46AE /* TableMysegmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C3CBD222E249500BA46AE /* TableMysegmentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		842C3CA9222E127200BA46AE /* dbmidtermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dbmidtermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C3CAD222E127200BA46AE /* dbmidtermUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbmidtermUITests.swift; sourceTree = "<group>"; };
 		842C3CAF222E127200BA46AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842C3CBD222E249500BA46AE /* TableMysegmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMysegmentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				842C3C8A222E127000BA46AE /* AppDelegate.swift */,
 				842C3C8C222E127000BA46AE /* ViewController.swift */,
 				842C3C8E222E127000BA46AE /* Main.storyboard */,
+				842C3CBD222E249500BA46AE /* TableMysegmentController.swift */,
 				842C3C94222E127200BA46AE /* Assets.xcassets */,
 				842C3C96222E127200BA46AE /* LaunchScreen.storyboard */,
 				842C3C99222E127200BA46AE /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				842C3C8D222E127000BA46AE /* ViewController.swift in Sources */,
 				842C3C93222E127000BA46AE /* dbmidterm.xcdatamodeld in Sources */,
+				842C3CBE222E249500BA46AE /* TableMysegmentController.swift in Sources */,
 				842C3C8B222E127000BA46AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
