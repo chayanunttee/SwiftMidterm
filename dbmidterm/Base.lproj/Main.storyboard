@@ -107,9 +107,9 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5PS-ak-aTY">
                                 <rect key="frame" x="23" y="87" width="281" height="29"/>
                                 <segments>
-                                    <segment title="Yellow"/>
-                                    <segment title="Green"/>
-                                    <segment title="Red"/>
+                                    <segment title="เฉยๆ"/>
+                                    <segment title="พอใจ"/>
+                                    <segment title="ไม่พอใจ"/>
                                 </segments>
                                 <connections>
                                     <action selector="mySegmentInput:" destination="o9q-PC-NUk" eventType="valueChanged" id="eFP-5w-WhP"/>
@@ -123,6 +123,43 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="zE2-xr-cDa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwQ-iE-31o">
+                                <rect key="frame" x="47" y="435" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="เฉยๆ">
+                                    <color key="titleColor" red="1" green="0.80002411114267868" blue="0.27916990158267563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quiet:" destination="o9q-PC-NUk" eventType="touchUpInside" id="2sy-eS-096"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPA-7h-uR3">
+                                <rect key="frame" x="136" y="435" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ยิ้ม">
+                                    <color key="titleColor" red="0.41788681234572622" green="1" blue="0.3707776443214913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="happy:" destination="o9q-PC-NUk" eventType="touchUpInside" id="efo-FA-joJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yD-k8-wDg">
+                                <rect key="frame" x="234" y="435" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ไม่พอใจ">
+                                    <color key="titleColor" red="1" green="0.17693547963772638" blue="0.13375894928549525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="unhappy:" destination="o9q-PC-NUk" eventType="touchUpInside" id="4qd-LM-JdQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spy-Tt-Qwk">
+                                <rect key="frame" x="16" y="399" width="262" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -133,6 +170,9 @@
                         <viewLayoutGuide key="safeArea" id="LP9-hm-5Ez"/>
                     </view>
                     <navigationItem key="navigationItem" id="g5c-o5-ahq"/>
+                    <connections>
+                        <outlet property="showHello" destination="Spy-Tt-Qwk" id="UkW-4j-C0b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QLY-qO-n2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

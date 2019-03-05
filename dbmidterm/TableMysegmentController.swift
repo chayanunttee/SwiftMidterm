@@ -10,6 +10,29 @@ import UIKit
 
 class TableMysegmentController: UIViewController {
     
+    @IBOutlet weak var showHello: UILabel!
+    @IBAction func quiet(_ sender: UIButton) {
+        var num : Int32
+        num = 1
+        num += num
+        let mynum = String(num)
+        showHello.text = "เฉยๆ " + mynum
+    }
+    @IBAction func happy(_ sender: UIButton) {
+        var num : Int32
+        num = 1
+        num += num
+        let mynum = String(num)
+        showHello.text = "พอใจ " + mynum
+    }
+    @IBAction func unhappy(_ sender: UIButton) {
+        var num : Int32
+        num = 1
+        num += num
+        let mynum = String(num)
+        showHello.text = "ไม่พอใจ " + mynum
+    }
+    
     
     @IBAction func mySegmentInput(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
@@ -29,6 +52,7 @@ class TableMysegmentController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.yellow
+        showHello.text = ""
     }
     
 
